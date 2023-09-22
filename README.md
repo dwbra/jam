@@ -16,7 +16,7 @@ There are examples of the JSON data that the function expects under the `/src/li
 
 #### CLI
 
-```json
+```
 Usage
 $ jam -s <source> -d <data> -o <outputType> -r <random> -fn <fileName> -fp <filePath>
 
