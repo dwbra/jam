@@ -6,7 +6,7 @@
 
 This started out as a single script and I saw the potential to flesh it out and break it apart to use as my first NPM package.
 
-There are zero dependencies here, it is just a series of JS files that take in your original data, alongside an object containing the desired keys and values you want to add to each object in your initial array.
+There is only one CLI dependency, making this a super light weight package. It is just a series of JS files that take in your original data, alongside an object containing the desired keys and values you want to add to each object in your initial array.
 
 There are examples of the JSON data that the function expects under the `/src/lib/mocks` dir.
 
