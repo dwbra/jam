@@ -16,6 +16,7 @@ There are examples of the JSON data that the function expects under the `/src/li
 
 #### CLI
 
+```json
 Usage
 $ jam -s <source> -d <data> -o <outputType> -r <random> -fn <fileName> -fp <filePath>
 
@@ -31,6 +32,7 @@ $ jam -s <source> -d <data> -o <outputType> -r <random> -fn <fileName> -fp <file
       $ jam -s "../src/lib/mocks/input.json" -d "../src/lib/mocks/additions.json" -o "json"
       $ jam -s "https://jsonplaceholder.typicode.com/posts" -d "https://jsonplaceholder.typicode.com/photos/1" -o "json"
       $ jam -s "https://jsonplaceholder.typicode.com/posts" -d "../src/lib/mocks/additions.json" -o "file" -r true --fn "testFile"
+```
 
 #### On Client
 
