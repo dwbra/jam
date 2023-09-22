@@ -1,0 +1,17 @@
+[
+  {
+    "programName": "Aboriginal Studies",
+    "description": "Aboriginal/Indigenous studies is an interdisciplinary field of inquiry that seeks to understand the ways in which indigenous peoples worldwide, despite their incredible diversity,share a common experience of colonization.",
+    "faculty": "Faculty of Arts"
+  },
+  {
+    "programName": "Accounting",
+    "description": "Of interest to students who have a non-business degree and want to return to university for one or two years to acquire a specialty in a functional area of business.",
+    "faculty": "School of Business and Economics"
+  },
+  {
+    "programName": "Real Estate Management",
+    "description": "The Bachelor of Real Estate Management program allows you, as a member of the real estate community, to upgrade your education so you can meet the accreditation requirements for various professional associations.",
+    "faculty": "School of Business and Economics"
+  }
+]
