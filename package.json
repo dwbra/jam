@@ -1,6 +1,6 @@
 {
   "name": "@dworkman/jam",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jam: JSON Array Modifier - A small package to help you add additional properties and data to a JSON array and return a JSON file or JSON string.",
   "main": "index.js",
   "type": "module",
