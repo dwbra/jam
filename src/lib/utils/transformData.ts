@@ -1,6 +1,6 @@
 import { randomIntFromInterval } from './export.js';
 
-type argTypes = (sanitizedInput: {}[], sanitizedAdditions: [][], options: { random: boolean }) => {}[];
+type argTypes = (sanitizedInput: {}[], sanitizedAdditions: [], options: { random: boolean }) => {}[];
 
 const transformData: argTypes = function (sanitizedInput, sanitizedAdditions, options) {
   const { random } = options;
@@ -12,8 +12,8 @@ const transformData: argTypes = function (sanitizedInput, sanitizedAdditions, op
     // Destructure each array to access the name to set as the key in the new obj
     // Destructure data even further to directly access it
     sanitizedAdditions.forEach(([name, data]) => {
-      const randomNumber = randomIntFromInterval(0, data.length - 1);
       if (random && Array.isArray(data)) {
+        const randomNumber = randomIntFromInterval(0, data.length - 1);
         newObj[name] = data[randomNumber];
       } else {
         newObj[name] = data;

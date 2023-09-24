@@ -9,7 +9,7 @@ const sanitizeInput = (input: [] | {}): {}[] => {
       return Object.entries(input);
     } else {
       console.log('your input is not valid JSON.');
-      return [{}];
+      return [];
     }
   } catch (error) {
     console.log(error);

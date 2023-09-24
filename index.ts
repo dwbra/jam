@@ -2,6 +2,8 @@ import builder from './src/main.js';
 
 const [returnJson, createFile] = builder();
 
-export default function modifyJsonArray() {
+const modifyJsonArray = () => {
   return [returnJson, createFile];
-}
+};
+
+export default modifyJsonArray;
