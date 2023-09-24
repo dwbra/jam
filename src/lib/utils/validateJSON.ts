@@ -1,9 +1,4 @@
-/**
- * A function for validating if a piece of data is valid JSON.
- * @param {Object|Array|String} item A javascript piece of data.
- * @returns {Boolean}
- */
-export default function isJson(item) {
+const isJson = (item: [] | string | object): boolean => {
   let value = typeof item !== 'string' ? JSON.stringify(item) : item;
   try {
     value = JSON.parse(value);
@@ -12,4 +7,6 @@ export default function isJson(item) {
   }
 
   return typeof value === 'object' && value !== null;
-}
+};
+
+export default isJson;
