@@ -1,8 +1,6 @@
-import { returnJson, returnNewFile as createFile } from './lib/utils/export.js';
+import { returnJson, createFile } from './lib/utils/export.js';
 
-type argTypes = () => [() => string, () => void];
-
-const builder: argTypes = () => {
+const builder = () => {
   return [returnJson, createFile];
 };
 

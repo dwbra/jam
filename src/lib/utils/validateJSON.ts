@@ -1,4 +1,8 @@
-const isJson = (item: [] | string | {}): boolean => {
+type argTypes = {
+  item: [] | string | {};
+};
+
+const isJson = (item: argTypes): boolean => {
   let value = typeof item !== 'string' ? JSON.stringify(item) : item;
   try {
     value = JSON.parse(value);

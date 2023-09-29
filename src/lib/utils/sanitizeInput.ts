@@ -1,6 +1,6 @@
 import { isJson } from './export.js';
 
-const sanitizeInput = (input: [] | {}): {}[] => {
+const sanitizeInput = (input: any) => {
   try {
     if (isJson(input)) {
       if (Array.isArray(input)) {

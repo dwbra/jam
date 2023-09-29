@@ -1,13 +1,9 @@
 import { sanitizeInput, transformData } from './export.js';
 
-interface optionParams {
-  random: boolean;
-}
-
-const returnJson = (input: [], additions: {}, options: optionParams): string => {
+const returnJson = (input: [], additions: {}, options: { random: boolean }) => {
   try {
-    const sanitizedInput = sanitizeInput(input);
-    const sanitizedAdditions = sanitizeInput(additions);
+    const sanitizedInput = sanitizeInput(input) as [];
+    const sanitizedAdditions = sanitizeInput(additions) as [];
     const transformedData = transformData(sanitizedInput, sanitizedAdditions, options);
     return JSON.stringify(transformedData);
   } catch (error) {

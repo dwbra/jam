@@ -1,4 +1,4 @@
-import builder from './src/main.js';
+import builder from './dist/main';
 
 const [returnJson, createFile] = builder();
 
