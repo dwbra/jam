@@ -1,7 +1,7 @@
 import { returnJson, createFile } from './lib/utils/export.js';
 
-const builder = () => {
+const builderFunction = () => {
   return [returnJson, createFile];
 };
 
-export default builder;
+export default builderFunction;

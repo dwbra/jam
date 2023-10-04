@@ -1,5 +1,6 @@
-type argTypes = (sanitizedInput: {}[], sanitizedAdditions: [], options: {
+declare const transformData: <T extends {
+    [key: string]: unknown;
+}>(sanitizedInput: T[], sanitizedAdditions: Array<[string, [] | string | {} | number]>, options: {
     random: boolean;
-}) => {}[];
-declare const transformData: argTypes;
+}) => T[];
 export default transformData;

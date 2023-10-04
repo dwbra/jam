@@ -1,8 +1,8 @@
 import { randomIntFromInterval } from './export.js';
-const transformData = function (sanitizedInput, sanitizedAdditions, options) {
+const transformData = (sanitizedInput, sanitizedAdditions, options) => {
     const { random } = options;
     // Map function to create your new data object
-    const transformedData = sanitizedInput.map(dataObject => {
+    const transformedData = sanitizedInput.map((dataObject) => {
         // Create a clone obj
         const newObj = { ...dataObject };
         // Loop over each array and then assign new key/value pairs to the newObj

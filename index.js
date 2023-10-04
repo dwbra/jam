@@ -1,6 +1,5 @@
-import builder from './dist/main';
-
-const [returnJson, createFile] = builder();
+import builderFunction from './dist/main.js';
+const [returnJson, createFile] = builderFunction();
 
 const modifyJsonArray = () => {
   return [returnJson, createFile];

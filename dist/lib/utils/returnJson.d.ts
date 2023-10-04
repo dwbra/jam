@@ -1,5 +1,4 @@
-interface optionParams {
+declare const returnJson: (input: [], additions: {}, options: {
     random: boolean;
-}
-declare const returnJson: (input: [], additions: {}, options: optionParams) => string;
+}) => string | undefined;
 export default returnJson;
