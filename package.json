@@ -1,13 +1,14 @@
 {
   "name": "@dworkman/jam",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "jam: JSON Array Modifier - A small package to help you add additional properties and data to a JSON array and return a JSON file or JSON string.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "prepare": "husky install",
     "test": "npm run eslint",
-    "eslint": "npx eslint ."
+    "eslint": "npx eslint .",
+    "start:dev": "npx nodemon"
   },
   "author": "",
   "license": "MIT",
@@ -18,14 +19,18 @@
     "jam": "./bin/index.js"
   },
   "devDependencies": {
+    "@types/node": "^20.6.3",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "nodemon": "^3.0.1",
     "prettier": "^3.0.1",
-    "husky": "^8.0.0"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "meow": "^12.1.1"
